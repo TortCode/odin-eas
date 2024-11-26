@@ -10,6 +10,9 @@ function makeGrid(size) {
             const cell = document.createElement("div");
             cell.style["flex"] = 1;
             cell.style["border"] = "1px solid #ccf";
+            cell.addEventListener("mouseenter", () => {
+                cell.classList.add("hover");
+            })
             row.appendChild(cell);
         }
         container.appendChild(row);
