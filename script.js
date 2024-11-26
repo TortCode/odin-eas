@@ -19,4 +19,10 @@ function makeGrid(size) {
     }
 }
 
-makeGrid(16)
+makeGrid(16);
+
+const newGridBtn = document.querySelector("#new-grid");
+newGridBtn.addEventListener("click", () => {
+    const size = parseInt(prompt("How many squares per side should the new grid have?"))
+    makeGrid(size);
+});
